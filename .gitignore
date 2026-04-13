@@ -1,7 +1,6 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
-# dependencies
-/node_modules
+# Dependencies
+node_modules/
+functions/node_modules/
 /.pnp
 .pnp.*
 .yarn/*
@@ -10,32 +9,64 @@
 !.yarn/releases
 !.yarn/versions
 
-# testing
-/coverage
-
-# next.js
-/.next/
+# Build
+dist/
+build/
+functions/lib/
+.next/
+.nuxt/
+.output/
 /out/
 
-# production
-/build
+# Environment — secrets live in the GLOBAL .env at agent-config/.env, never per-project
+.env
+.env.*
+.env.local
+.env.*.local
 
-# misc
+# Firebase
+.firebase/
+firebase-debug.log
+firestore-debug.log
+ui-debug.log
+database-debug.log
+pubsub-debug.log
+
+# Vercel
+.vercel
+
+# Doppler
+.doppler.yaml
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
 .DS_Store
-*.pem
+Thumbs.db
+ehthumbs.db
+Desktop.ini
 
-# debug
+# Secrets — defensive matches in case anything leaks past the .env rule
+*.pem
+*.key
+service-account*.json
+credentials*.json
+
+# Logs
+*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
-# env files (can opt-in for committing if needed)
-.env*
+# Coverage
+coverage/
+.nyc_output/
 
-# vercel
-.vercel
-
-# typescript
+# TypeScript
 *.tsbuildinfo
 next-env.d.ts
