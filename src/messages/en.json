@@ -1,0 +1,170 @@
+{
+  "meta": {
+    "title": "Rozanowska — Curated Real Estate Investment in Poland",
+    "description": "Premium commercial real estate opportunities in Poland. Carefully selected for serious investors."
+  },
+  "nav": {
+    "opportunities": "Opportunities",
+    "explorePoland": "Explore Poland",
+    "about": "About",
+    "contact": "Contact",
+    "cta": "Inquire"
+  },
+  "hero": {
+    "headline": "Curated Real Estate Investment in Poland",
+    "subtitle": "Premium commercial properties, carefully selected for serious investors. Warsaw and beyond.",
+    "cta": "Explore Opportunities"
+  },
+  "cities": {
+    "title": "Explore Poland",
+    "subtitle": "Key investment markets in Poland's most dynamic cities.",
+    "warsaw": "Warsaw",
+    "krakow": "Kraków",
+    "wroclaw": "Wrocław",
+    "tricity": "Tricity",
+    "poznan": "Poznań"
+  },
+  "categories": {
+    "title": "Investment Categories",
+    "subtitle": "Four asset classes, each with a distinct return profile.",
+    "commercial": "Commercial",
+    "investment": "Investment",
+    "land": "Land",
+    "residential": "Premium Residential"
+  },
+  "featured": {
+    "title": "Featured Opportunities",
+    "subtitle": "Curated properties with verified investment parameters.",
+    "viewDetails": "View Details",
+    "listings": {
+      "l1": {
+        "title": "Class A Office, Mokotów",
+        "location": "Warsaw",
+        "category": "Commercial",
+        "price": "12,500,000 PLN",
+        "roi": "7.2%",
+        "area": "2,400 m²",
+        "status": "Tenanted"
+      },
+      "l2": {
+        "title": "Logistics Hub",
+        "location": "Kraków",
+        "category": "Commercial",
+        "price": "18,200,000 PLN",
+        "roi": "8.1%",
+        "area": "12,000 m²",
+        "status": "Tenanted"
+      },
+      "l3": {
+        "title": "Mixed-Use Building",
+        "location": "Wrocław",
+        "category": "Investment",
+        "price": "8,900,000 PLN",
+        "roi": "6.8%",
+        "area": "3,200 m²",
+        "status": "Tenanted"
+      },
+      "l4": {
+        "title": "Retail Space, Old Town",
+        "location": "Poznań",
+        "category": "Commercial",
+        "price": "4,200,000 PLN",
+        "roi": "7.5%",
+        "area": "850 m²",
+        "status": "Tenanted"
+      },
+      "l5": {
+        "title": "Investment Land Plot",
+        "location": "Tricity",
+        "category": "Land",
+        "price": "6,800,000 PLN",
+        "roi": "—",
+        "area": "15,000 m²",
+        "status": "Available"
+      },
+      "l6": {
+        "title": "Penthouse with View",
+        "location": "Warsaw",
+        "category": "Premium Residential",
+        "price": "5,600,000 PLN",
+        "roi": "5.4%",
+        "area": "280 m²",
+        "status": "Available"
+      }
+    }
+  },
+  "whyPoland": {
+    "title": "Why Poland",
+    "subtitle": "Strong macroeconomic fundamentals supporting real estate investment.",
+    "stats": {
+      "gdp": { "value": "5.3%", "label": "GDP Growth", "detail": "Fastest-growing major EU economy" },
+      "population": { "value": "38M", "label": "Population", "detail": "Largest market in Central Europe" },
+      "fdi": { "value": "€4.2B", "label": "FDI Inflow", "detail": "Annual foreign direct investment" },
+      "yields": { "value": "7–9%", "label": "Yields", "detail": "Commercial property cap rates" }
+    }
+  },
+  "forAgents": {
+    "title": "For Agents & Owners",
+    "subtitle": "Rozanowska is a curated platform. We accept properties by application only.",
+    "cta": "Apply to List"
+  },
+  "offMarket": {
+    "title": "Off-Market Opportunities",
+    "subtitle": "Access exclusive properties that never appear in public listings. Discretion. Curation. Relationship.",
+    "cta": "Request Access"
+  },
+  "contactStrip": {
+    "title": "Let's Talk",
+    "subtitle": "Whether you're looking to invest or have a property to present — start with a conversation.",
+    "ctaInvestor": "Investor Inquiry",
+    "ctaOwner": "Submit a Property"
+  },
+  "about": {
+    "title": "About Rozanowska",
+    "intro": "Warsaw-based commercial real estate advisor connecting international investors with Poland's best opportunities.",
+    "bio1": "With deep knowledge of Poland's commercial property markets and a network spanning developers, institutional owners, and private investors, Rozanowska provides a curated, trust-first approach to real estate investment.",
+    "bio2": "Every opportunity is vetted. Every introduction is intentional. No marketplace noise — just carefully selected properties and the advisory support to make informed decisions.",
+    "howTitle": "How I Work",
+    "values": {
+      "curation": { "title": "Curation", "description": "Every property passes rigorous vetting. Quality over quantity." },
+      "discretion": { "title": "Discretion", "description": "Off-market access and confidential transaction handling for serious investors." },
+      "market": { "title": "Market Knowledge", "description": "Deep expertise across Poland's commercial markets — Warsaw, Kraków, Wrocław, Tricity, Poznań." }
+    },
+    "cta": "Get in Touch"
+  },
+  "opportunities": {
+    "title": "Opportunities",
+    "subtitle": "Curated investment properties across the Polish market."
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Choose your inquiry type and describe your needs.",
+    "tabs": {
+      "investor": "Investor",
+      "owner": "Owner / Agent",
+      "general": "General"
+    },
+    "fields": {
+      "name": "Full name",
+      "email": "Email",
+      "phone": "Phone (optional)",
+      "message": "Message",
+      "submit": "Send"
+    },
+    "investorPlaceholder": "I'm looking for commercial property in Poland. I'm interested in...",
+    "ownerPlaceholder": "I'd like to present an investment property for consideration...",
+    "generalPlaceholder": "I have a question about..."
+  },
+  "footer": {
+    "tagline": "Curated real estate investment in Poland",
+    "columns": {
+      "cities": "Cities",
+      "categories": "Categories",
+      "company": "Company",
+      "legal": "Legal"
+    },
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "cookies": "Cookies"
+  }
+}

@@ -1,0 +1,170 @@
+{
+  "meta": {
+    "title": "Rozanowska — Wyselekcjonowane inwestycje w nieruchomości w Polsce",
+    "description": "Premium nieruchomości komercyjne w Polsce. Starannie wyselekcjonowane dla poważnych inwestorów."
+  },
+  "nav": {
+    "opportunities": "Oferty",
+    "explorePoland": "O Polsce",
+    "about": "O nas",
+    "contact": "Kontakt",
+    "cta": "Zapytaj"
+  },
+  "hero": {
+    "headline": "Wyselekcjonowane inwestycje w nieruchomości w Polsce",
+    "subtitle": "Starannie dobrane nieruchomości komercyjne dla wymagających inwestorów. Warszawa i cała Polska.",
+    "cta": "Zobacz oferty"
+  },
+  "cities": {
+    "title": "Odkryj Polskę",
+    "subtitle": "Kluczowe rynki inwestycyjne w najdynamiczniejszych miastach Polski.",
+    "warsaw": "Warszawa",
+    "krakow": "Kraków",
+    "wroclaw": "Wrocław",
+    "tricity": "Trójmiasto",
+    "poznan": "Poznań"
+  },
+  "categories": {
+    "title": "Kategorie inwestycji",
+    "subtitle": "Cztery klasy aktywów, każda z własnym profilem zwrotu.",
+    "commercial": "Komercyjne",
+    "investment": "Inwestycyjne",
+    "land": "Grunty",
+    "residential": "Rezydencje"
+  },
+  "featured": {
+    "title": "Wybrane oferty",
+    "subtitle": "Wyselekcjonowane nieruchomości z potwierdzonymi parametrami inwestycyjnymi.",
+    "viewDetails": "Szczegóły",
+    "listings": {
+      "l1": {
+        "title": "Biurowiec klasy A, Mokotów",
+        "location": "Warszawa",
+        "category": "Komercyjne",
+        "price": "12 500 000 PLN",
+        "roi": "7,2%",
+        "area": "2 400 m²",
+        "status": "Wynajęte"
+      },
+      "l2": {
+        "title": "Centrum logistyczne",
+        "location": "Kraków",
+        "category": "Komercyjne",
+        "price": "18 200 000 PLN",
+        "roi": "8,1%",
+        "area": "12 000 m²",
+        "status": "Wynajęte"
+      },
+      "l3": {
+        "title": "Budynek wielofunkcyjny",
+        "location": "Wrocław",
+        "category": "Inwestycyjne",
+        "price": "8 900 000 PLN",
+        "roi": "6,8%",
+        "area": "3 200 m²",
+        "status": "Wynajęte"
+      },
+      "l4": {
+        "title": "Powierzchnia handlowa, Stare Miasto",
+        "location": "Poznań",
+        "category": "Komercyjne",
+        "price": "4 200 000 PLN",
+        "roi": "7,5%",
+        "area": "850 m²",
+        "status": "Wynajęte"
+      },
+      "l5": {
+        "title": "Działka inwestycyjna",
+        "location": "Trójmiasto",
+        "category": "Grunty",
+        "price": "6 800 000 PLN",
+        "roi": "—",
+        "area": "15 000 m²",
+        "status": "Dostępne"
+      },
+      "l6": {
+        "title": "Penthouse z widokiem",
+        "location": "Warszawa",
+        "category": "Rezydencje",
+        "price": "5 600 000 PLN",
+        "roi": "5,4%",
+        "area": "280 m²",
+        "status": "Dostępne"
+      }
+    }
+  },
+  "whyPoland": {
+    "title": "Dlaczego Polska",
+    "subtitle": "Solidne fundamenty makroekonomiczne wspierające inwestycje w nieruchomości.",
+    "stats": {
+      "gdp": { "value": "5,3%", "label": "Wzrost PKB", "detail": "Najszybciej rosnąca duża gospodarka UE" },
+      "population": { "value": "38M", "label": "Populacja", "detail": "Największy rynek Europy Środkowej" },
+      "fdi": { "value": "4,2 mld €", "label": "Napływ BIZ", "detail": "Roczne bezpośrednie inwestycje zagraniczne" },
+      "yields": { "value": "7–9%", "label": "Stopy zwrotu", "detail": "Stopy kapitalizacji nieruchomości komercyjnych" }
+    }
+  },
+  "forAgents": {
+    "title": "Dla agentów i właścicieli",
+    "subtitle": "Rozanowska to platforma wyselekcjonowana. Przyjmujemy nieruchomości wyłącznie po weryfikacji.",
+    "cta": "Złóż wniosek"
+  },
+  "offMarket": {
+    "title": "Oferty poza rynkiem",
+    "subtitle": "Dostęp do ekskluzywnych nieruchomości, które nie pojawiają się w publicznych ofertach. Dyskrecja. Selekcja. Relacja.",
+    "cta": "Zapytaj o dostęp"
+  },
+  "contactStrip": {
+    "title": "Porozmawiajmy",
+    "subtitle": "Niezależnie od tego, czy szukasz inwestycji, czy chcesz przedstawić nieruchomość — zacznij od rozmowy.",
+    "ctaInvestor": "Zapytanie inwestora",
+    "ctaOwner": "Zgłoś nieruchomość"
+  },
+  "about": {
+    "title": "O Rozanowska",
+    "intro": "Doradca w zakresie nieruchomości komercyjnych z siedzibą w Warszawie, łączący międzynarodowych inwestorów z najlepszymi okazjami w Polsce.",
+    "bio1": "Dzięki dogłębnej znajomości polskiego rynku nieruchomości komercyjnych i sieci kontaktów obejmującej deweloperów, właścicieli instytucjonalnych i inwestorów prywatnych, Rozanowska oferuje wyselekcjonowane, oparte na zaufaniu podejście do inwestycji w nieruchomości.",
+    "bio2": "Każda oferta jest zweryfikowana. Każde przedstawienie jest celowe. Bez szumu rynkowego — tylko starannie wyselekcjonowane nieruchomości i wsparcie doradcze umożliwiające świadome decyzje.",
+    "howTitle": "Jak pracuję",
+    "values": {
+      "curation": { "title": "Selekcja", "description": "Każda nieruchomość przechodzi rygorystyczną weryfikację. Jakość, nie ilość." },
+      "discretion": { "title": "Dyskrecja", "description": "Dostęp poza rynkiem i poufna obsługa transakcji dla poważnych inwestorów." },
+      "market": { "title": "Znajomość rynku", "description": "Głęboka wiedza o polskim rynku komercyjnym — Warszawa, Kraków, Wrocław, Trójmiasto, Poznań." }
+    },
+    "cta": "Skontaktuj się"
+  },
+  "opportunities": {
+    "title": "Oferty",
+    "subtitle": "Wyselekcjonowane nieruchomości inwestycyjne na polskim rynku."
+  },
+  "contact": {
+    "title": "Kontakt",
+    "subtitle": "Wybierz rodzaj zapytania i opisz swoje potrzeby.",
+    "tabs": {
+      "investor": "Inwestor",
+      "owner": "Właściciel / Agent",
+      "general": "Ogólne"
+    },
+    "fields": {
+      "name": "Imię i nazwisko",
+      "email": "E-mail",
+      "phone": "Telefon (opcjonalnie)",
+      "message": "Wiadomość",
+      "submit": "Wyślij"
+    },
+    "investorPlaceholder": "Szukam nieruchomości komercyjnych w Polsce. Interesuje mnie...",
+    "ownerPlaceholder": "Chciałbym przedstawić nieruchomość inwestycyjną do rozpatrzenia...",
+    "generalPlaceholder": "Mam pytanie dotyczące..."
+  },
+  "footer": {
+    "tagline": "Wyselekcjonowane inwestycje w nieruchomości w Polsce",
+    "columns": {
+      "cities": "Miasta",
+      "categories": "Kategorie",
+      "company": "Firma",
+      "legal": "Prawne"
+    },
+    "privacy": "Polityka prywatności",
+    "terms": "Regulamin",
+    "cookies": "Cookies"
+  }
+}
