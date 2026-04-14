@@ -5,7 +5,6 @@ import { ListingCard } from '@/components/ds/ListingCard';
 import { CTAPanel } from '@/components/ds/CTAPanel';
 import { Footer } from '@/components/ds/Footer';
 
-const PLACEHOLDER = '/images/placeholder.svg';
 const listingKeys = ['l1', 'l2', 'l3', 'l4', 'l5', 'l6'] as const;
 
 export default async function OpportunitiesPage({ params }: { params: Promise<{ locale: string }> }) {
@@ -39,7 +38,7 @@ export default async function OpportunitiesPage({ params }: { params: Promise<{ 
             <ListingCard
               key={key}
               listing={{
-                image: PLACEHOLDER,
+                image: `/images/listings/${key}.jpg`,
                 title: t(`featured.listings.${key}.title`),
                 location: t(`featured.listings.${key}.location`),
                 category: t(`featured.listings.${key}.category`),

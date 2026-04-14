@@ -10,7 +10,6 @@ import { CTAPanel } from '@/components/ds/CTAPanel';
 import { Button } from '@/components/ds/Button';
 import { Footer } from '@/components/ds/Footer';
 
-const PLACEHOLDER = '/images/placeholder.svg';
 const cities = ['warsaw', 'krakow', 'wroclaw', 'tricity', 'poznan'] as const;
 const categories = ['commercial', 'investment', 'land', 'residential'] as const;
 const listingKeys = ['l1', 'l2', 'l3', 'l4', 'l5', 'l6'] as const;
@@ -42,7 +41,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
         subtitle={t('hero.subtitle')}
         cta={t('hero.cta')}
         ctaHref={`${localePath}/oferty`}
-        image={PLACEHOLDER}
+        image="/images/hero/warsaw-skyline.jpg"
         imageAlt="Warsaw skyline"
         variant="cinematic"
       />
@@ -53,7 +52,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
         </SectionTitle>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-[var(--spacing-4)]">
           {cities.map((city) => (
-            <CityCard key={city} name={t(`cities.${city}`)} image={PLACEHOLDER} />
+            <CityCard key={city} name={t(`cities.${city}`)} image={`/images/cities/${city}.jpg`} />
           ))}
         </div>
       </Section>
@@ -64,7 +63,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
         </SectionTitle>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-[var(--spacing-6)]">
           {categories.map((cat) => (
-            <CategoryTile key={cat} name={t(`categories.${cat}`)} image={PLACEHOLDER} />
+            <CategoryTile key={cat} name={t(`categories.${cat}`)} image={`/images/categories/${cat}.jpg`} />
           ))}
         </div>
       </Section>
@@ -78,7 +77,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
             <ListingCard
               key={key}
               listing={{
-                image: PLACEHOLDER,
+                image: `/images/listings/${key}.jpg`,
                 title: t(`featured.listings.${key}.title`),
                 location: t(`featured.listings.${key}.location`),
                 category: t(`featured.listings.${key}.category`),

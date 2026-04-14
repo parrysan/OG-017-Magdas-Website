@@ -5,8 +5,6 @@ import { Button } from '@/components/ds/Button';
 import { Footer } from '@/components/ds/Footer';
 import Image from 'next/image';
 
-const PLACEHOLDER = '/images/placeholder.svg';
-
 export default async function AboutPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   setRequestLocale(locale);
@@ -34,7 +32,7 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-[var(--spacing-12)] items-start">
           <div className="relative aspect-[3/4] rounded-[var(--radius-xl)] overflow-hidden">
             <Image
-              src={PLACEHOLDER}
+              src="/images/about/magda-portrait.jpg"
               alt="Magda Rozanowska"
               fill
               className="object-cover"
