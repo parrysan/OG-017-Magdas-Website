@@ -49,8 +49,8 @@ export function Footer({
                 {title}
               </h4>
               <ul className="list-none p-0 m-0 space-y-[var(--spacing-2)]">
-                {links.map(({ label, href }) => (
-                  <li key={href}>
+                {links.map(({ label, href }, i) => (
+                  <li key={`${label}-${i}`}>
                     <a href={href} className="text-[var(--text-sm)] text-[var(--color-text-muted)] hover:text-[var(--color-text)] no-underline transition-colors">
                       {label}
                     </a>

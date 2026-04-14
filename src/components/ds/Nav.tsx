@@ -38,7 +38,7 @@ export function Nav({
 
   const navBg = scrolled
     ? 'bg-white/95 backdrop-blur-md border-b border-[var(--color-border-subtle)] shadow-[var(--shadow-sm)]'
-    : 'bg-transparent';
+    : 'bg-black/30 backdrop-blur-sm';
 
   const textColor = scrolled ? 'text-[var(--color-gray-900)]' : 'text-white';
   const linkColor = scrolled

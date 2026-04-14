@@ -24,7 +24,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
   return (
     <main>
       <Nav
-        brand="Rozanowska"
+        brand="Rozanowska.com"
         brandHref={`/${locale === 'pl' ? '' : locale}`}
         links={[
           { label: t('nav.opportunities'), href: `${localePath}/oferty` },
@@ -47,7 +47,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
       />
 
       <Section id="explore" bg="secondary" padding="lg">
-        <SectionTitle align="center" subtitle={t('cities.subtitle')}>
+        <SectionTitle subtitle={t('cities.subtitle')}>
           {t('cities.title')}
         </SectionTitle>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-[var(--spacing-4)]">
@@ -58,7 +58,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
       </Section>
 
       <Section bg="default" padding="lg">
-        <SectionTitle align="center" subtitle={t('categories.subtitle')}>
+        <SectionTitle subtitle={t('categories.subtitle')}>
           {t('categories.title')}
         </SectionTitle>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-[var(--spacing-6)]">
@@ -69,7 +69,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
       </Section>
 
       <Section bg="secondary" padding="lg">
-        <SectionTitle align="center" subtitle={t('featured.subtitle')}>
+        <SectionTitle subtitle={t('featured.subtitle')}>
           {t('featured.title')}
         </SectionTitle>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[var(--spacing-6)]">
@@ -93,7 +93,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
       </Section>
 
       <Section bg="dark" padding="lg">
-        <SectionTitle align="center" subtitle={t('whyPoland.subtitle')}>
+        <SectionTitle subtitle={t('whyPoland.subtitle')}>
           {t('whyPoland.title')}
         </SectionTitle>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[var(--spacing-8)]">
@@ -109,8 +109,8 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
       </Section>
 
       <Section bg="secondary" padding="lg">
-        <div className="text-center max-w-2xl mx-auto">
-          <SectionTitle align="center" subtitle={t('forAgents.subtitle')}>
+        <div className="max-w-2xl">
+          <SectionTitle subtitle={t('forAgents.subtitle')}>
             {t('forAgents.title')}
           </SectionTitle>
           <Button href={`${localePath}/kontakt`} pill size="lg">
@@ -127,11 +127,11 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
       />
 
       <Section bg="default" padding="lg">
-        <div className="text-center">
-          <SectionTitle align="center" subtitle={t('contactStrip.subtitle')}>
+        <div>
+          <SectionTitle subtitle={t('contactStrip.subtitle')}>
             {t('contactStrip.title')}
           </SectionTitle>
-          <div className="flex flex-wrap justify-center gap-[var(--spacing-4)]">
+          <div className="flex flex-wrap gap-[var(--spacing-4)]">
             <Button href={`${localePath}/kontakt`} pill size="lg">
               {t('contactStrip.ctaInvestor')}
             </Button>
@@ -143,7 +143,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
       </Section>
 
       <Footer
-        brand="Rozanowska"
+        brand="Rozanowska.com"
         variant="columns"
         columns={[
           {

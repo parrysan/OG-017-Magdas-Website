@@ -13,7 +13,7 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
   return (
     <main>
       <Nav
-        brand="Rozanowska"
+        brand="Rozanowska.com"
         brandHref={`/${locale === 'pl' ? '' : locale}`}
         links={[
           { label: t('nav.opportunities'), href: `${localePath}/oferty` },
@@ -27,7 +27,7 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
       <div className="h-16" />
 
       <Section bg="default" padding="lg">
-        <SectionTitle align="center" subtitle={t('contact.subtitle')}>
+        <SectionTitle subtitle={t('contact.subtitle')}>
           {t('contact.title')}
         </SectionTitle>
         <ContactForm
@@ -51,7 +51,7 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
         />
       </Section>
 
-      <Footer brand="Rozanowska" variant="simple" />
+      <Footer brand="Rozanowska.com" variant="simple" />
     </main>
   );
 }

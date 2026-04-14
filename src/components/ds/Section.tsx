@@ -67,7 +67,7 @@ export function SectionTitle({ children, subtitle, align = 'left', className = '
         {children}
       </h2>
       {subtitle && (
-        <p className="mt-[var(--spacing-4)] text-[var(--text-lg)] leading-[var(--leading-relaxed)] max-w-2xl mx-auto opacity-80">
+        <p className="mt-[var(--spacing-4)] text-[var(--text-lg)] leading-[var(--leading-relaxed)] max-w-2xl opacity-80">
           {subtitle}
         </p>
       )}

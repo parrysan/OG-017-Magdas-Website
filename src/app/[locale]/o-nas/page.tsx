@@ -15,7 +15,7 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
   return (
     <main>
       <Nav
-        brand="Rozanowska"
+        brand="Rozanowska.com"
         brandHref={`/${locale === 'pl' ? '' : locale}`}
         links={[
           { label: t('nav.opportunities'), href: `${localePath}/oferty` },
@@ -57,12 +57,12 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
       </Section>
 
       <Section bg="secondary" padding="lg">
-        <SectionTitle align="center">
+        <SectionTitle align="left">
           {t('about.howTitle')}
         </SectionTitle>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-[var(--spacing-8)]">
           {values.map((v) => (
-            <div key={v} className="text-center">
+            <div key={v}>
               <h3 className="text-[var(--text-xl)] font-[var(--weight-semibold)] text-[var(--color-text)] mb-[var(--spacing-3)]">
                 {t(`about.values.${v}.title`)}
               </h3>
@@ -75,7 +75,7 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
       </Section>
 
       <Section bg="dark" padding="lg">
-        <div className="text-center">
+        <div>
           <h2 className="text-[var(--text-3xl)] font-[var(--weight-bold)] text-white mb-[var(--spacing-6)]" style={{ lineHeight: '1.14' }}>
             {t('contactStrip.title')}
           </h2>
@@ -85,7 +85,7 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
         </div>
       </Section>
 
-      <Footer brand="Rozanowska" variant="simple" />
+      <Footer brand="Rozanowska.com" variant="simple" />
     </main>
   );
 }

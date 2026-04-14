@@ -16,7 +16,7 @@ export default async function OpportunitiesPage({ params }: { params: Promise<{ 
   return (
     <main>
       <Nav
-        brand="Rozanowska"
+        brand="Rozanowska.com"
         brandHref={`/${locale === 'pl' ? '' : locale}`}
         links={[
           { label: t('nav.opportunities'), href: `${localePath}/oferty` },
@@ -30,7 +30,7 @@ export default async function OpportunitiesPage({ params }: { params: Promise<{ 
       <div className="h-16" />
 
       <Section bg="default" padding="lg">
-        <SectionTitle align="center" subtitle={t('opportunities.subtitle')}>
+        <SectionTitle subtitle={t('opportunities.subtitle')}>
           {t('opportunities.title')}
         </SectionTitle>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[var(--spacing-6)]">
@@ -60,7 +60,7 @@ export default async function OpportunitiesPage({ params }: { params: Promise<{ 
         ctaHref={`${localePath}/kontakt`}
       />
 
-      <Footer brand="Rozanowska" variant="simple" />
+      <Footer brand="Rozanowska.com" variant="simple" />
     </main>
   );
 }

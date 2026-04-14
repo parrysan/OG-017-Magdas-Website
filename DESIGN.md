@@ -281,7 +281,99 @@ The color story is starkly binary. Product sections alternate between pure black
 - Lifestyle images may crop on mobile but maintain their rounded corners
 - Lazy loading for below-fold product images
 
-## 9. Agent Prompt Guide
+## 9. Target Personas
+
+Every component, heading, and CTA should be tested against: "which persona does this serve, and does it speak their language?"
+
+### P1 — Klaus Richter ("The Buyer")
+
+**Photo:** `public/personas/klaus-richter.png`
+**Nano Banana prompt:** Professional man, early 50s, silver-grey hair, dark suit, no tie, modern office with panoramic city view through floor-to-ceiling windows, natural directional light from left, shallow depth of field, editorial portrait photography, photorealistic, no text
+
+- **Age:** 52
+- **Location:** Hamburg, Germany
+- **Role:** Private family office managing ~€15M in European commercial real estate
+- **Why Poland:** Seeking yield diversification beyond saturated Western European markets
+- **Language:** English primary, basic German on site would be a bonus
+- **Behaviour:** Scans homepage in under 10 seconds. Uses simple search (city + type + price). Will request a call or deck if trust is formed quickly through design quality, clarity, and investment language.
+- **Key needs:** "Why Poland" in 3-6 data-backed bullets. Clear investment highlights per listing (ROI, yield, tenant, lease term, zoning). Easy off-market request path.
+- **Decision speed:** Fast — if the numbers and positioning are right, he's on a call within 48 hours.
+- **Primary journey:** Hero → Featured Listings → Listing Detail → Off-Market / Contact
+- **Test question:** *"Would Klaus trust this page enough to pick up the phone?"*
+
+### P2 — Anna Wojciechowska ("The Supplier")
+
+**Photo:** `public/personas/anna-wojciechowska.png`
+**Nano Banana prompt:** Professional woman, late 30s, dark navy blazer, white blouse, confident posture, standing in a modern Warsaw business district setting with glass buildings in background, warm natural light, shallow depth of field, editorial portrait photography, photorealistic, no text
+
+- **Age:** 38
+- **Location:** Warsaw, Poland
+- **Role:** Senior broker at a mid-size Polish commercial real estate agency
+- **Why Rozanowska:** Has quality investment stock but no digital channel to reach foreign capital. Wants selective, premium brand association — not another OLX-style marketplace.
+- **Language:** Polish primary, professional English
+- **Behaviour:** Finds the site via network, LinkedIn, or direct outreach. Looks for "For agents" or "List your property." Accepts application/verification if the brand looks truly premium.
+- **Key needs:** Clear explanation of who qualifies to list. Simple application form (portfolio type, cities, ticket sizes, proof of mandate). Confidence that this is curated, not crowded.
+- **Decision speed:** Medium — will review the site, check Magda's LinkedIn, then apply if positioning is right.
+- **Primary journey:** Homepage → For Agents section → Application form / Contact
+- **Test question:** *"Would Anna feel proud to have her listings presented here?"*
+
+### P3 — James Chen ("The Researcher")
+
+**Photo:** `public/personas/james-chen.png`
+**Nano Banana prompt:** Professional man, mid 40s, East Asian appearance, smart casual outfit with navy quarter-zip sweater, reading on a tablet, seated in a modern co-working space with warm ambient lighting, plants in background, candid editorial photography style, photorealistic, no text
+
+- **Age:** 44
+- **Location:** London, UK
+- **Role:** Tech founder and angel investor considering European real estate as portfolio diversification
+- **Why Poland:** Heard it's undervalued. Wants to understand the market before committing capital. Will act in 6-12 months.
+- **Language:** English only
+- **Behaviour:** Browses "Explore Poland" by city and category to build a mental model. Reads "Why Poland" and 1-2 detailed listings end-to-end. May not enquire immediately but will share the site with a partner or advisor.
+- **Key needs:** City-level overviews that read like concise investment briefs. Clear segmentation of asset classes with examples. Low-friction way to stay in the loop. Clear off-market explanation.
+- **Decision speed:** Slow — 6-12 months. But when he shares the link with his advisor, the site needs to convert that second-hand visitor too.
+- **Primary journey:** Explore Poland → Why Poland → City pages → Bookmark / Share / Newsletter
+- **Test question:** *"Would James send this link to his financial advisor with confidence?"*
+
+### How personas shape every page
+
+| Section | P1 Klaus | P2 Anna | P3 James |
+|---------|----------|---------|----------|
+| Hero | Strong investment headline + simple search | Sees premium positioning, knows this isn't a mass portal | Understands Poland = investment destination |
+| Featured Listings | His primary browse — investment data on every card | Sees how her stock would be presented | Benchmarks example deals |
+| Explore Poland | Secondary — goes direct to listings | Not her journey | Primary entry ramp — market intelligence |
+| Why Poland | Confirmation of what he already suspects | Validates the foreign-investor pitch | Core learning content |
+| For Agents | Not his journey | Her entry point — selective, application-based | Not his journey |
+| Off-Market | High intent — requests access | May submit off-market stock | Parks the relationship for later |
+| Contact | Calls or submits inquiry | Applies to list | Low priority now, high priority in 6 months |
+
+---
+
+## 10. Tone of Voice
+
+Polish default. Confident, understated, investment-focused. Short sentences. No exclamation marks. No "dream home" language — this is capital allocation, not lifestyle browsing.
+
+**Do:**
+- Use investment language: yield, cap rate, opportunity, portfolio, asset class
+- Be precise and data-led: "7.2% net yield" not "great returns"
+- Sound like a trusted advisor briefing a serious investor
+- Keep sentences short and declarative
+- Let the quality of the opportunity speak — no hard sell
+
+**Don't:**
+- Use residential consumer language: dream home, cosy, charming, stunning
+- Use exclamation marks or promotional superlatives
+- Write long paragraphs of filler copy
+- Sound like a mass-market property portal or classified ad
+- Use generic real estate marketing clichés
+
+**Examples:**
+- Good: "Biurowiec klasy A w Mokotowie. 2 400 m², pełne obłożenie, stopa zwrotu 7,2% netto."
+- Bad: "Wspaniała okazja inwestycyjna! Fantastyczny budynek biurowy w świetnej lokalizacji!"
+- Good: "Class A office, Mokotów. 2,400 m², fully tenanted, 7.2% net yield."
+- Bad: "Amazing investment opportunity! Stunning office building in a great location!"
+
+---
+
+## 11. Agent Prompt Guide
 
 ### Quick Color Reference
 - Primary CTA: Apple Blue (`#0071e3`)
