@@ -27,7 +27,7 @@ created: "2026-04-13"
 - **Priority**: `medium`
 - **Revenue lane**: `1-service`
 - **Purpose** (one sentence): Magda is a solo entrepreneur in real estate based in Warsaw, Poland. She is building her brand in the Warsaw market, and the website will be a key promotional pillar.
-- **Last touched**: `2026-04-13`
+- **Last touched**: `2026-04-14`
 
 ---
 
@@ -91,6 +91,6 @@ Overrides: none yet — add project-specific overrides here as they emerge.
 
 > **Optional, ephemeral.** A 2–3 line free-form scratch pad of "where I left off" — not durable knowledge. Durable decisions belong in the vault project page. Wipe and rewrite freely.
 
-Last action: Re-scaffolded with canonical CLAUDE.md template on 2026-04-13. Apple design pack applied. Next.js + OS-000 design system already in place from prior session.
-Next action: Run /brainstorming to explore site structure, then begin implementation.
-Open question: Content strategy — what pages/sections does Magda need?
+Last action: v1 build complete (2026-04-14). 4 pages + design system, PL/EN i18n, 21 AI-generated images, Apple-inspired theme.
+Next action: Review site in browser, generate real content from Magda, deploy to Firebase.
+Open question: Contact form submission mechanism (API endpoint vs mailto vs third-party).
