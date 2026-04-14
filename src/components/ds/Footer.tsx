@@ -1,3 +1,4 @@
+'use client';
 /**
  * OS-000 Footer Component
  * Variants: simple (one-line), columns (multi-column links)
@@ -29,9 +30,9 @@ export function Footer({
 }: FooterProps) {
   if (variant === 'simple') {
     return (
-      <footer className={`w-full border-t border-[var(--color-border-subtle)] bg-[var(--color-bg)] py-[var(--spacing-8)] px-[var(--spacing-6)] ${className}`}>
-        <div className="max-w-[var(--container-max)] mx-auto flex flex-col sm:flex-row items-center justify-between gap-[var(--spacing-4)]">
-          <p className="text-[var(--text-sm)] text-[var(--color-text-muted)]">
+      <footer className={`w-full bg-[#1a1f1e] py-[var(--spacing-8)] ${className}`}>
+        <div className="max-w-[var(--container-max)] mx-auto px-[var(--spacing-6)] flex flex-col sm:flex-row items-center justify-between gap-[var(--spacing-4)]">
+          <p className="text-[var(--text-sm)]" style={{ color: 'rgba(255,255,255,0.35)' }}>
             &copy; {year} {brand}. All rights reserved.
           </p>
         </div>
@@ -40,18 +41,18 @@ export function Footer({
   }
 
   return (
-    <footer className={`w-full border-t border-[var(--color-border-subtle)] bg-[var(--color-bg-secondary)] py-[var(--spacing-12)] px-[var(--spacing-6)] ${className}`}>
-      <div className="max-w-[var(--container-max)] mx-auto">
+    <footer className={`w-full bg-[#1a1f1e] py-[var(--spacing-16)] ${className}`}>
+      <div className="max-w-[var(--container-max)] mx-auto px-[var(--spacing-6)]">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-[var(--spacing-8)] mb-[var(--spacing-12)]">
           {columns.map(({ title, links }) => (
             <div key={title}>
-              <h4 className="font-[var(--font-primary)] text-[var(--text-sm)] font-[var(--weight-bold)] text-[var(--color-text)] mb-[var(--spacing-4)] uppercase tracking-[var(--tracking-caps)]">
+              <h4 className="font-[var(--font-primary)] text-[var(--text-sm)] font-[var(--weight-bold)] mb-[var(--spacing-4)] uppercase tracking-[var(--tracking-caps)]" style={{ color: 'rgba(255,255,255,0.5)' }}>
                 {title}
               </h4>
               <ul className="list-none p-0 m-0 space-y-[var(--spacing-2)]">
                 {links.map(({ label, href }, i) => (
                   <li key={`${label}-${i}`}>
-                    <a href={href} className="text-[var(--text-sm)] text-[var(--color-text-muted)] hover:text-[var(--color-text)] no-underline transition-colors">
+                    <a href={href} className="text-[var(--text-sm)] no-underline transition-colors" style={{ color: 'rgba(255,255,255,0.7)' }} onMouseEnter={e => (e.currentTarget.style.color = '#ffffff')} onMouseLeave={e => (e.currentTarget.style.color = 'rgba(255,255,255,0.7)')}>
                       {label}
                     </a>
                   </li>
@@ -60,8 +61,8 @@ export function Footer({
             </div>
           ))}
         </div>
-        <div className="border-t border-[var(--color-border-subtle)] pt-[var(--spacing-6)]">
-          <p className="text-[var(--text-sm)] text-[var(--color-text-muted)]">
+        <div className="pt-[var(--spacing-6)]" style={{ borderTop: '1px solid rgba(255,255,255,0.1)' }}>
+          <p className="text-[var(--text-sm)]" style={{ color: 'rgba(255,255,255,0.35)' }}>
             &copy; {year} {brand}. All rights reserved.
           </p>
         </div>

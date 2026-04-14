@@ -44,8 +44,8 @@ export default async function OpportunitiesPage({ params }: { params: Promise<{ 
                 category: t(`featured.listings.${key}.category`),
                 price: t(`featured.listings.${key}.price`),
                 roi: t(`featured.listings.${key}.roi`),
-                area: t(`featured.listings.${key}.area`),
-                status: t(`featured.listings.${key}.status`),
+                area: '',
+                status: t(`featured.listings.${key}.occupancy`),
               }}
               ctaLabel={t('featured.viewDetails')}
             />

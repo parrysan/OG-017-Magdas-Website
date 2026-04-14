@@ -21,7 +21,7 @@ export function Button({
   className?: string;
   [key: string]: any;
 }) {
-  const radius = pill ? 'rounded-full' : 'rounded-[var(--radius-md)]';
+  const radius = pill ? 'rounded-full' : 'rounded-none';
   const base = `inline-flex items-center justify-center gap-2 font-medium ${radius} border-none cursor-pointer transition-all duration-[var(--transition-base)] no-underline`;
 
   const variants = {

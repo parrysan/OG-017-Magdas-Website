@@ -2,13 +2,13 @@ import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { Nav } from '@/components/ds/Nav';
 import { Hero } from '@/components/ds/Hero';
 import { Section, SectionTitle } from '@/components/ds/Section';
-import { CityCard } from '@/components/ds/CityCard';
 import { CategoryTile } from '@/components/ds/CategoryTile';
-import { ListingCard } from '@/components/ds/ListingCard';
-import { StatBlock } from '@/components/ds/StatBlock';
+import { WhyPolandSection } from '@/components/ds/WhyPolandSection';
 import { CTAPanel } from '@/components/ds/CTAPanel';
 import { Button } from '@/components/ds/Button';
 import { Footer } from '@/components/ds/Footer';
+import { CitiesCarousel } from '@/components/ds/CitiesCarousel';
+import { FeaturedCarousel } from '@/components/ds/FeaturedCarousel';
 
 const cities = ['warsaw', 'krakow', 'wroclaw', 'tricity', 'poznan'] as const;
 const categories = ['commercial', 'investment', 'land', 'residential'] as const;
@@ -46,16 +46,18 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
         variant="cinematic"
       />
 
-      <Section id="explore" bg="secondary" padding="lg">
-        <SectionTitle subtitle={t('cities.subtitle')}>
-          {t('cities.title')}
-        </SectionTitle>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-[var(--spacing-4)]">
-          {cities.map((city) => (
-            <CityCard key={city} name={t(`cities.${city}`)} image={`/images/cities/${city}.jpg`} />
-          ))}
-        </div>
-      </Section>
+      <CitiesCarousel
+        id="explore"
+        title={t('cities.title')}
+        subtitle={t('cities.subtitle')}
+        actionLabel={t('cities.action')}
+        cities={cities.map((city) => ({
+          id: city,
+          name: t(`cities.${city}`),
+          region: t(`cities.region_${city}`),
+          image: `/images/cities/${city}.jpg`,
+        }))}
+      />
 
       <Section bg="default" padding="lg">
         <SectionTitle subtitle={t('categories.subtitle')}>
@@ -68,52 +70,36 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
         </div>
       </Section>
 
-      <Section bg="secondary" padding="lg">
-        <SectionTitle subtitle={t('featured.subtitle')}>
-          {t('featured.title')}
-        </SectionTitle>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[var(--spacing-6)]">
-          {listingKeys.map((key) => (
-            <ListingCard
-              key={key}
-              listing={{
-                image: `/images/listings/${key}.jpg`,
-                title: t(`featured.listings.${key}.title`),
-                location: t(`featured.listings.${key}.location`),
-                category: t(`featured.listings.${key}.category`),
-                price: t(`featured.listings.${key}.price`),
-                roi: t(`featured.listings.${key}.roi`),
-                area: t(`featured.listings.${key}.area`),
-                status: t(`featured.listings.${key}.status`),
-              }}
-              ctaLabel={t('featured.viewDetails')}
-            />
-          ))}
-        </div>
-      </Section>
+      <FeaturedCarousel
+        title={t('featured.title')}
+        listings={listingKeys.map((key) => ({
+          id: key,
+          image: `/images/listings/${key}.jpg`,
+          title: t(`featured.listings.${key}.title`),
+          location: t(`featured.listings.${key}.location`),
+          category: t(`featured.listings.${key}.category`),
+          price: t(`featured.listings.${key}.price`),
+          roi: t(`featured.listings.${key}.roi`),
+          occupancy: t(`featured.listings.${key}.occupancy`),
+        }))}
+      />
 
-      <Section bg="dark" padding="lg">
-        <SectionTitle subtitle={t('whyPoland.subtitle')}>
-          {t('whyPoland.title')}
-        </SectionTitle>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[var(--spacing-8)]">
-          {(['gdp', 'population', 'fdi', 'yields'] as const).map((stat) => (
-            <StatBlock
-              key={stat}
-              value={t(`whyPoland.stats.${stat}.value`)}
-              label={t(`whyPoland.stats.${stat}.label`)}
-              detail={t(`whyPoland.stats.${stat}.detail`)}
-            />
-          ))}
-        </div>
-      </Section>
+      <WhyPolandSection
+        title={t('whyPoland.title')}
+        subtitle={t('whyPoland.subtitle')}
+        stats={(['gdp', 'population', 'fdi', 'yields'] as const).map((stat) => ({
+          value: t(`whyPoland.stats.${stat}.value`),
+          label: t(`whyPoland.stats.${stat}.label`),
+          detail: t(`whyPoland.stats.${stat}.detail`),
+        }))}
+      />
 
       <Section bg="secondary" padding="lg">
         <div className="max-w-2xl">
           <SectionTitle subtitle={t('forAgents.subtitle')}>
             {t('forAgents.title')}
           </SectionTitle>
-          <Button href={`${localePath}/kontakt`} pill size="lg">
+          <Button href={`${localePath}/kontakt`} size="lg">
             {t('forAgents.cta')}
           </Button>
         </div>
@@ -132,10 +118,10 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
             {t('contactStrip.title')}
           </SectionTitle>
           <div className="flex flex-wrap gap-[var(--spacing-4)]">
-            <Button href={`${localePath}/kontakt`} pill size="lg">
+            <Button href={`${localePath}/kontakt`} size="lg">
               {t('contactStrip.ctaInvestor')}
             </Button>
-            <Button href={`${localePath}/kontakt`} variant="outline" pill size="lg">
+            <Button href={`${localePath}/kontakt`} variant="outline" size="lg">
               {t('contactStrip.ctaOwner')}
             </Button>
           </div>

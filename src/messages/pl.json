@@ -4,25 +4,31 @@
     "description": "Premium nieruchomości komercyjne w Polsce. Starannie wyselekcjonowane dla poważnych inwestorów."
   },
   "nav": {
-    "opportunities": "Oferty",
-    "explorePoland": "O Polsce",
+    "opportunities": "Portfolio",
+    "explorePoland": "Insights",
     "about": "O nas",
     "contact": "Kontakt",
-    "cta": "Zapytaj"
+    "cta": "Umów konsultację"
   },
   "hero": {
     "headline": "Wyselekcjonowane inwestycje w nieruchomości w Polsce",
-    "subtitle": "Starannie dobrane nieruchomości komercyjne dla wymagających inwestorów. Warszawa i cała Polska.",
+    "subtitle": "Starannie dobrane nieruchomości komercyjne dla wymagających inwestorów.\nWarszawa i cała Polska.",
     "cta": "Zobacz oferty"
   },
   "cities": {
-    "title": "Odkryj Polskę",
-    "subtitle": "Kluczowe rynki inwestycyjne w najdynamiczniejszych miastach Polski.",
+    "title": "Odkryj Polskę według miast",
+    "subtitle": "Wyselekcjonowane krajobrazy inwestycyjne w najbardziej dynamicznych ośrodkach gospodarczych Europy Środkowej.",
+    "action": "Raporty rynkowe",
     "warsaw": "Warszawa",
     "krakow": "Kraków",
     "wroclaw": "Wrocław",
     "tricity": "Trójmiasto",
-    "poznan": "Poznań"
+    "poznan": "Poznań",
+    "region_warsaw": "Region Mazowieckie",
+    "region_krakow": "Region Małopolskie",
+    "region_wroclaw": "Region Dolnośląskie",
+    "region_tricity": "Region Pomorskie",
+    "region_poznan": "Region Wielkopolskie"
   },
   "categories": {
     "title": "Kategorie inwestycji",
@@ -33,63 +39,56 @@
     "residential": "Rezydencje"
   },
   "featured": {
-    "title": "Wybrane oferty",
-    "subtitle": "Wyselekcjonowane nieruchomości z potwierdzonymi parametrami inwestycyjnymi.",
+    "title": "Wyróżnione możliwości",
     "viewDetails": "Szczegóły",
     "listings": {
       "l1": {
-        "title": "Biurowiec klasy A, Mokotów",
-        "location": "Warszawa",
-        "category": "Komercyjne",
-        "price": "12 500 000 PLN",
-        "roi": "7,2%",
-        "area": "2 400 m²",
-        "status": "Wynajęte"
+        "title": "Centrum Business Plaza",
+        "location": "Warszawa, Wola",
+        "category": "Wyróżniony",
+        "price": "€12,4M",
+        "roi": "6,2%",
+        "occupancy": "98%"
       },
       "l2": {
-        "title": "Centrum logistyczne",
-        "location": "Kraków",
+        "title": "Vistula Logistics Hub",
+        "location": "Wrocław, Korytarz A4",
         "category": "Komercyjne",
-        "price": "18 200 000 PLN",
-        "roi": "8,1%",
-        "area": "12 000 m²",
-        "status": "Wynajęte"
+        "price": "€24,8M",
+        "roi": "7,8%",
+        "occupancy": "100%"
       },
       "l3": {
-        "title": "Budynek wielofunkcyjny",
-        "location": "Wrocław",
+        "title": "Kazimierz Lofts",
+        "location": "Kraków, Dzielnica 1",
         "category": "Inwestycyjne",
-        "price": "8 900 000 PLN",
-        "roi": "6,8%",
-        "area": "3 200 m²",
-        "status": "Wynajęte"
+        "price": "€8,9M",
+        "roi": "5,4%",
+        "occupancy": "85% sprzedane"
       },
       "l4": {
-        "title": "Powierzchnia handlowa, Stare Miasto",
-        "location": "Poznań",
+        "title": "Stary Browar Retail",
+        "location": "Poznań, Stare Miasto",
         "category": "Komercyjne",
-        "price": "4 200 000 PLN",
+        "price": "€4,2M",
         "roi": "7,5%",
-        "area": "850 m²",
-        "status": "Wynajęte"
+        "occupancy": "92%"
       },
       "l5": {
-        "title": "Działka inwestycyjna",
-        "location": "Trójmiasto",
+        "title": "Baltic Waterfront",
+        "location": "Trójmiasto, Gdańsk",
         "category": "Grunty",
-        "price": "6 800 000 PLN",
+        "price": "€6,8M",
         "roi": "—",
-        "area": "15 000 m²",
-        "status": "Dostępne"
+        "occupancy": "Przedsprzedaż"
       },
       "l6": {
-        "title": "Penthouse z widokiem",
-        "location": "Warszawa",
+        "title": "Złota Penthouse",
+        "location": "Warszawa, Śródmieście",
         "category": "Rezydencje",
-        "price": "5 600 000 PLN",
+        "price": "€5,6M",
         "roi": "5,4%",
-        "area": "280 m²",
-        "status": "Dostępne"
+        "occupancy": "Dostępne"
       }
     }
   },

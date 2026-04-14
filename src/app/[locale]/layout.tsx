@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, setRequestLocale } from 'next-intl/server';
-import { Inter } from 'next/font/google';
+import { Inter, Manrope } from 'next/font/google';
 import { routing } from '@/i18n/routing';
 import '../globals.css';
 
@@ -9,6 +9,12 @@ const inter = Inter({
   subsets: ['latin', 'latin-ext'],
   display: 'swap',
   variable: '--font-inter',
+});
+
+const manrope = Manrope({
+  subsets: ['latin', 'latin-ext'],
+  display: 'swap',
+  variable: '--font-manrope',
 });
 
 export function generateStaticParams() {
@@ -42,8 +48,8 @@ export default async function LocaleLayout({
   const messages = await getMessages();
 
   return (
-    <html lang={locale} className={`h-full antialiased ${inter.variable}`}>
-      <body className="min-h-full flex flex-col" style={{ fontFamily: 'var(--font-primary)' }}>
+    <html lang={locale} className={`h-full antialiased ${inter.variable} ${manrope.variable}`}>
+      <body className="min-h-full flex flex-col" style={{ fontFamily: 'var(--font-body)' }}>
         <NextIntlClientProvider messages={messages}>
           {children}
         </NextIntlClientProvider>

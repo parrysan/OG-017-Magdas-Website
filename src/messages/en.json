@@ -4,25 +4,31 @@
     "description": "Premium commercial real estate opportunities in Poland. Carefully selected for serious investors."
   },
   "nav": {
-    "opportunities": "Opportunities",
-    "explorePoland": "Explore Poland",
+    "opportunities": "Portfolio",
+    "explorePoland": "Insights",
     "about": "About",
     "contact": "Contact",
-    "cta": "Inquire"
+    "cta": "Request Consultation"
   },
   "hero": {
     "headline": "Curated Real Estate Investment in Poland",
-    "subtitle": "Premium commercial properties, carefully selected for serious investors. Warsaw and beyond.",
+    "subtitle": "Premium commercial properties, carefully selected for serious investors.\nWarsaw and beyond.",
     "cta": "Explore Opportunities"
   },
   "cities": {
-    "title": "Explore Poland",
-    "subtitle": "Key investment markets in Poland's most dynamic cities.",
+    "title": "Explore Poland by City",
+    "subtitle": "Discover curated investment landscapes in the CEE's most dynamic economic hubs.",
+    "action": "View Market Reports",
     "warsaw": "Warsaw",
     "krakow": "Kraków",
     "wroclaw": "Wrocław",
     "tricity": "Tricity",
-    "poznan": "Poznań"
+    "poznan": "Poznań",
+    "region_warsaw": "Region Mazowieckie",
+    "region_krakow": "Region Małopolskie",
+    "region_wroclaw": "Region Dolnośląskie",
+    "region_tricity": "Region Pomorskie",
+    "region_poznan": "Region Wielkopolskie"
   },
   "categories": {
     "title": "Investment Categories",
@@ -34,62 +40,55 @@
   },
   "featured": {
     "title": "Featured Opportunities",
-    "subtitle": "Curated properties with verified investment parameters.",
     "viewDetails": "View Details",
     "listings": {
       "l1": {
-        "title": "Class A Office, Mokotów",
-        "location": "Warsaw",
-        "category": "Commercial",
-        "price": "12,500,000 PLN",
-        "roi": "7.2%",
-        "area": "2,400 m²",
-        "status": "Tenanted"
+        "title": "Centrum Business Plaza",
+        "location": "Warsaw, Wola District",
+        "category": "Featured Asset",
+        "price": "€12.4M",
+        "roi": "6.2%",
+        "occupancy": "98%"
       },
       "l2": {
-        "title": "Logistics Hub",
-        "location": "Kraków",
+        "title": "Vistula Logistics Hub",
+        "location": "Wrocław, A4 Corridor",
         "category": "Commercial",
-        "price": "18,200,000 PLN",
-        "roi": "8.1%",
-        "area": "12,000 m²",
-        "status": "Tenanted"
+        "price": "€24.8M",
+        "roi": "7.8%",
+        "occupancy": "100%"
       },
       "l3": {
-        "title": "Mixed-Use Building",
-        "location": "Wrocław",
+        "title": "Kazimierz Lofts",
+        "location": "Kraków, District 1",
         "category": "Investment",
-        "price": "8,900,000 PLN",
-        "roi": "6.8%",
-        "area": "3,200 m²",
-        "status": "Tenanted"
+        "price": "€8.9M",
+        "roi": "5.4%",
+        "occupancy": "85% Sold Out"
       },
       "l4": {
-        "title": "Retail Space, Old Town",
-        "location": "Poznań",
+        "title": "Stary Browar Retail",
+        "location": "Poznań, Old Town",
         "category": "Commercial",
-        "price": "4,200,000 PLN",
+        "price": "€4.2M",
         "roi": "7.5%",
-        "area": "850 m²",
-        "status": "Tenanted"
+        "occupancy": "92%"
       },
       "l5": {
-        "title": "Investment Land Plot",
-        "location": "Tricity",
+        "title": "Baltic Waterfront",
+        "location": "Tricity, Gdańsk",
         "category": "Land",
-        "price": "6,800,000 PLN",
+        "price": "€6.8M",
         "roi": "—",
-        "area": "15,000 m²",
-        "status": "Available"
+        "occupancy": "Pre-sale"
       },
       "l6": {
-        "title": "Penthouse with View",
-        "location": "Warsaw",
+        "title": "Złota Penthouse",
+        "location": "Warsaw, Śródmieście",
         "category": "Premium Residential",
-        "price": "5,600,000 PLN",
+        "price": "€5.6M",
         "roi": "5.4%",
-        "area": "280 m²",
-        "status": "Available"
+        "occupancy": "Available"
       }
     }
   },

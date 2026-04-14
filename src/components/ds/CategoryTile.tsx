@@ -17,12 +17,12 @@ export function CategoryTile({ name, image, href = '#', className = '' }: Catego
         src={image}
         alt={name}
         fill
-        className="object-cover transition-transform duration-500 group-hover:scale-105"
+        className="object-cover grayscale transition-all duration-500 group-hover:grayscale-0 group-hover:scale-105"
         sizes="(max-width: 768px) 100vw, 25vw"
       />
       <div className="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition-colors" />
       <div className="absolute inset-0 flex items-center justify-center">
-        <h3 className="text-white text-[var(--text-xl)] font-[var(--weight-semibold)] tracking-[var(--tracking-wide)]">
+        <h3 className="text-white text-[var(--text-2xl)] md:text-[var(--text-3xl)] font-[var(--weight-bold)] tracking-[var(--tracking-tight)]" style={{ color: '#ffffff' }}>
           {name}
         </h3>
       </div>

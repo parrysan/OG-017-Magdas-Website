@@ -35,7 +35,7 @@ export function Hero({
 }: HeroProps) {
   if (variant === 'cinematic') {
     return (
-      <section className={`relative w-full min-h-screen flex items-center justify-center ${className}`}>
+      <section className={`relative w-full min-h-screen flex items-end ${className}`}>
         {image && (
           <Image
             src={image}
@@ -46,20 +46,20 @@ export function Hero({
             sizes="100vw"
           />
         )}
-        <div className="absolute inset-0 bg-black/55" />
-        <div className="relative z-10 max-w-[var(--container-max)] mx-auto px-[var(--spacing-6)] text-center pt-16">
-          <h1 className="font-[var(--font-primary)] text-[var(--text-4xl)] lg:text-[var(--text-5xl)] font-[var(--weight-bold)] text-white mb-[var(--spacing-6)] max-w-4xl mx-auto" style={{ lineHeight: '1.07', letterSpacing: '-0.028em' }}>
+        <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/50 to-black/10" />
+        <div className="relative z-10 max-w-[var(--container-max)] mx-auto px-[var(--spacing-6)] pb-12 md:pb-[var(--spacing-20)] w-full flex flex-col justify-end min-h-[60vh] md:min-h-0 mt-auto">
+          <h1 className="font-[var(--font-primary)] font-[var(--weight-bold)]" style={{ fontSize: 'clamp(2.75rem, 8vw, 4.5rem)', lineHeight: '1.05', letterSpacing: '-0.025em', color: '#ffffff' }}>
             {headline}
           </h1>
           {subtitle && (
-            <p className="text-[var(--text-lg)] lg:text-[var(--text-xl)] text-white/75 mb-[var(--spacing-8)] max-w-2xl mx-auto leading-[var(--leading-relaxed)]">
+            <p className="font-[var(--font-primary)] font-[var(--weight-light)] max-w-2xl whitespace-pre-line mt-6 md:mt-8" style={{ fontSize: 'clamp(1.25rem, 3.5vw, 2.5rem)', lineHeight: '1.3', letterSpacing: '-0.01em', color: 'rgba(255,255,255,0.9)' }}>
               {subtitle}
             </p>
           )}
-          <div className="flex flex-wrap justify-center gap-[var(--spacing-4)]">
-            {cta && <Button href={ctaHref} variant={ctaVariant} size="lg" pill>{cta}</Button>}
+          <div className="flex flex-wrap gap-[var(--spacing-4)] mt-8 md:mt-10">
+            {cta && <Button href={ctaHref} variant={ctaVariant} size="lg">{cta}</Button>}
             {secondaryCta && (
-              <Button href={secondaryCtaHref} variant="outline" size="lg" pill className="border-white/30 text-white hover:bg-white/10 hover:text-white">
+              <Button href={secondaryCtaHref} variant="ghost" size="lg" className="text-white hover:bg-white/10 hover:text-white">
                 {secondaryCta}
               </Button>
             )}

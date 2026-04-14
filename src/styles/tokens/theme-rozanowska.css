@@ -1,44 +1,46 @@
 /* ═══════════════════════════════════════════════════════════════
-   Rozanowska Theme — Apple-Inspired Binary Dark/Light
-   Premium real estate investment. See DESIGN.md for full spec.
+   Rozanowska Theme — The Architectural Monolith
+   Stitch-driven design: editorial real estate, forest green,
+   tonal layering, Manrope display + Inter body.
    Import AFTER base.css.
    ═══════════════════════════════════════════════════════════════ */
 
 @theme {
-  --color-black: #000000;
-  --color-white: #FFFFFF;
-  --color-primary: #0071e3;
-  --color-primary-light: #2997ff;
-  --color-primary-dark: #0066cc;
+  --color-black: #0c0f0f;
+  --color-white: #ffffff;
+  --color-primary: #4e6359;
+  --color-primary-light: #6b8378;
+  --color-primary-dark: #42574e;
+  --color-primary-container: #d0e8dc;
 
-  --color-gray-50: #f5f5f7;
-  --color-gray-100: #e8e8ed;
-  --color-gray-200: #d2d2d7;
-  --color-gray-300: #b0b0b5;
-  --color-gray-400: #86868b;
-  --color-gray-500: #6e6e73;
-  --color-gray-600: #515154;
-  --color-gray-700: #3a3a3c;
-  --color-gray-800: #2c2c2e;
-  --color-gray-900: #1d1d1f;
+  --color-gray-50: #f9f9f9;
+  --color-gray-100: #f2f4f4;
+  --color-gray-200: #dde4e5;
+  --color-gray-300: #adb3b4;
+  --color-gray-400: #8a9192;
+  --color-gray-500: #757c7d;
+  --color-gray-600: #5a6061;
+  --color-gray-700: #3d4344;
+  --color-gray-800: #2d3435;
+  --color-gray-900: #2d3435;
 
-  --color-bg: var(--color-white);
-  --color-bg-secondary: var(--color-gray-50);
+  --color-bg: #f4f5f2;
+  --color-bg-secondary: #e8ebe6;
   --color-bg-card: var(--color-white);
-  --color-bg-muted: var(--color-gray-100);
-  --color-bg-dark: var(--color-black);
+  --color-bg-muted: #dce0d8;
+  --color-bg-dark: #1a1f1e;
 
   --color-text: var(--color-gray-900);
-  --color-text-secondary: rgba(0, 0, 0, 0.8);
-  --color-text-muted: rgba(0, 0, 0, 0.48);
+  --color-text-secondary: var(--color-gray-600);
+  --color-text-muted: var(--color-gray-400);
   --color-text-inverse: var(--color-white);
 
   --color-accent: var(--color-primary);
   --color-cta: var(--color-primary);
-  --color-cta-hover: #0077ed;
-  --color-link: var(--color-primary-dark);
+  --color-cta-hover: var(--color-primary-dark);
+  --color-link: var(--color-primary);
   --color-link-dark: var(--color-primary-light);
-  --color-highlight: var(--color-primary);
+  --color-highlight: #a68966;
 
   --color-border: var(--color-gray-200);
   --color-border-subtle: var(--color-gray-100);
@@ -46,9 +48,9 @@
 
   --color-success: #10B981;
   --color-warning: #F59E0B;
-  --color-error: #EF4444;
+  --color-error: #9f403d;
   --color-info: var(--color-primary);
 
-  --font-primary: 'Inter', 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  --font-body: 'Inter', 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-primary: var(--font-manrope), 'Manrope', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-body: var(--font-inter), 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }

@@ -41,10 +41,10 @@ export function Section({
   return (
     <section
       id={id}
-      className={`w-full px-[var(--spacing-6)] ${backgrounds[bg]} ${paddings[padding]} ${className}`}
+      className={`w-full ${backgrounds[bg]} ${paddings[padding]} ${className}`}
       {...props}
     >
-      <div className="max-w-[var(--container-max)] mx-auto">
+      <div className="max-w-[var(--container-max)] mx-auto px-[var(--spacing-6)]">
         {children}
       </div>
     </section>
@@ -63,7 +63,7 @@ export function SectionTitle({ children, subtitle, align = 'left', className = '
 
   return (
     <div className={`mb-[var(--spacing-10)] ${alignment} ${className}`}>
-      <h2 className="font-[var(--font-primary)] text-[var(--text-3xl)] font-[var(--weight-bold)] leading-[var(--leading-snug)]">
+      <h2 className="font-[var(--font-primary)] text-[1.75rem] font-[var(--weight-bold)] leading-[var(--leading-snug)]">
         {children}
       </h2>
       {subtitle && (
