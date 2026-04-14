@@ -1,14 +1,15 @@
 /**
  * OS-000 Section Component
  * Wrapper for content sections with consistent spacing and max-width.
+ * Supports Apple-inspired dark/light binary rhythm.
  */
 import React from 'react';
 
 interface SectionProps {
   children: React.ReactNode;
   id?: string;
-  bg?: 'default' | 'secondary' | 'muted' | 'accent';
-  padding?: 'none' | 'sm' | 'default' | 'lg';
+  bg?: 'default' | 'secondary' | 'muted' | 'accent' | 'dark';
+  padding?: 'none' | 'sm' | 'default' | 'lg' | 'xl';
   className?: string;
   [key: string]: any;
 }
@@ -26,6 +27,7 @@ export function Section({
     secondary: 'bg-[var(--color-bg-secondary)]',
     muted: 'bg-[var(--color-bg-muted)]',
     accent: 'bg-[var(--color-accent)] text-[var(--color-text-inverse)]',
+    dark: 'section-dark',
   };
 
   const paddings: Record<string, string> = {
@@ -33,6 +35,7 @@ export function Section({
     sm: 'py-[var(--spacing-8)]',
     default: 'py-[var(--spacing-16)]',
     lg: 'py-[var(--spacing-24)]',
+    xl: 'py-32',
   };
 
   return (
@@ -60,11 +63,11 @@ export function SectionTitle({ children, subtitle, align = 'left', className = '
 
   return (
     <div className={`mb-[var(--spacing-10)] ${alignment} ${className}`}>
-      <h2 className="font-[var(--font-primary)] text-[var(--text-3xl)] font-[var(--weight-bold)] leading-[var(--leading-snug)] text-[var(--color-text)]">
+      <h2 className="font-[var(--font-primary)] text-[var(--text-3xl)] font-[var(--weight-bold)] leading-[var(--leading-snug)]">
         {children}
       </h2>
       {subtitle && (
-        <p className="mt-[var(--spacing-4)] text-[var(--text-lg)] text-[var(--color-text-secondary)] leading-[var(--leading-relaxed)] max-w-2xl mx-auto">
+        <p className="mt-[var(--spacing-4)] text-[var(--text-lg)] leading-[var(--leading-relaxed)] max-w-2xl mx-auto opacity-80">
           {subtitle}
         </p>
       )}
