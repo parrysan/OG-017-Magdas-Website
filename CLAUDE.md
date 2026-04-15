@@ -47,10 +47,11 @@ created: "2026-04-13"
 
 > **Operational facts that should never have to be re-discovered.** Deployed URLs, store handles, theme IDs, API endpoints, credentials *location* (never the credentials themselves — those live in the global `.env`, see global AGENT.md §2.5). Update this section whenever a fact changes — it is the canonical source.
 
-- **Production URL**: TBD
-- **Staging / preview URL**: TBD
-- **Platform handle / project ID**: TBD
-- **Other identifiers**: TBD
+- **Production URL**: https://og-017-magdas-website.web.app (redirects / → /pl)
+- **Staging / preview URL**: http://localhost:3000/pl (dev server)
+- **Platform handle / project ID**: `og-017-magdas-website` (Firebase)
+- **GitHub repo**: https://github.com/parrysan/OG-017-Magdas-Website
+- **Stitch project ID**: `18239877615901461847` (title: "Magda Website Design")
 - **Credentials**: stored in global `.env` under `OG017_*`
 
 ---
@@ -91,6 +92,12 @@ Overrides: none yet — add project-specific overrides here as they emerge.
 
 > **Optional, ephemeral.** A 2–3 line free-form scratch pad of "where I left off" — not durable knowledge. Durable decisions belong in the vault project page. Wipe and rewrite freely.
 
-Last action: v1 build complete (2026-04-14). 4 pages + design system, PL/EN i18n, 21 AI-generated images, Apple-inspired theme.
-Next action: Review site in browser, generate real content from Magda, deploy to Firebase.
-Open question: Contact form submission mechanism (API endpoint vs mailto vs third-party).
+Last action (2026-04-15): Created /og-close skill. Added Avatars & Personas section to /design-system with 3 AI portraits (Nano Banana). Deployed to Firebase.
+
+In-progress: Brainstorming — personas defined (Foreign Allocator, Warsaw Insider, Property Owner). Sent to Magda for feedback via /design-system page with 5 questions. Next step: propose 2-3 positioning approaches once feedback arrives.
+
+Pending decisions: Magda persona feedback → positioning approach → which Stitch screens to implement. Design system buildout (STR-style sidebar nav) not yet started — per OS-000 decision in vault.
+
+Open questions: Contact form mechanism. Real content from Magda. Stitch screen prioritisation.
+
+Key refs: Live site https://og-017-magdas-website.web.app | Firebase og-017-magdas-website | Stitch 18239877615901461847 | NotebookLM e634a426-ed99-4897-a294-ac583b307a32 | STR styleguide reference at localhost:3001/styleguide/
